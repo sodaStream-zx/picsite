@@ -1,13 +1,10 @@
 package pri.zxx.picsite.entity;
 
-import javax.persistence.Entity;
-
 /**
  * @author zxx
  * @desc
  * @createTime 2019-09-25-下午 2:13
  */
-@Entity
 public class FirstMenu {
     private Long fmId;
     private String fmName;

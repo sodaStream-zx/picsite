@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mypicsite
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+    password: Zxx1994,.
+    url: jdbc:mysql://62.234.211.179:3306/picSite?useUnicode=true&characterEncoding=utf-8&useSSL=false
+  redis:
+    host: 62.234.211.179
+    port: 6379
+server:
+  port: 8081
