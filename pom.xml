@@ -47,6 +47,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.55</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunce.cloud</groupId>
+            <artifactId>yunce-cloud-swaggerconfig</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
