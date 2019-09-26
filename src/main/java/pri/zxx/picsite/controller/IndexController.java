@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pri.zxx.picsite.entity.FirstMenu;
-import pri.zxx.picsite.entity.ResDto;
+import pri.zxx.picsite.res.ResDto;
 import pri.zxx.picsite.services.IndexService;
 
 /**

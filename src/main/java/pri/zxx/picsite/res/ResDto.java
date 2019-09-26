@@ -1,4 +1,4 @@
-package pri.zxx.picsite.entity;
+package pri.zxx.picsite.res;
 
 /**
  * @author Administrator
