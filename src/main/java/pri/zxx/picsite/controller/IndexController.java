@@ -23,6 +23,7 @@ public class IndexController {
 
     @GetMapping(value = "/save")
     public String saveFm(FirstMenu firstMenu) {
+        log.warn("添加一级分类:{}", firstMenu);
         boolean insert = indexService.insert(firstMenu);
         if (insert) {
             return JSON.toJSONString(new ResDto(10000, "添加成功"));

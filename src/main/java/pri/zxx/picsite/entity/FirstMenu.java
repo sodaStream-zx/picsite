@@ -1,22 +1,14 @@
 package pri.zxx.picsite.entity;
 
-import javax.persistence.*;
-
 /**
  * @author zxx
  * @desc
  * @createTime 2019-09-25-下午 2:13
  */
-@Entity
 public class FirstMenu {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long fmId;
-    @Column
     private String fmName;
-    @Column
     private Integer enabled;
-    @Column
     private String tip;
 
 

@@ -1,9 +1,10 @@
 package pri.zxx.picsite.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pri.zxx.picsite.dao.IndexDao;
 import pri.zxx.picsite.entity.FirstMenu;
+import pri.zxx.picsite.mapper.IndexMapper;
+
+import javax.annotation.Resource;
 
 /**
  * @author Administrator
@@ -12,13 +13,12 @@ import pri.zxx.picsite.entity.FirstMenu;
  */
 @Service
 public class IndexService {
-    @Autowired
-    private IndexDao indexDao;
+    @Resource
+    private IndexMapper indexMapper;
 
     public boolean insert(FirstMenu firstMenu) {
-        FirstMenu save = indexDao.save(firstMenu);
-        System.out.println(save);
-        return true;
+        Integer save = indexMapper.save(firstMenu);
+        return save > 0;
     }
 }
 

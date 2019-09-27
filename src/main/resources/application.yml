@@ -6,16 +6,16 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     username: root
     password: Zxx1994,.
-    url: jdbc:mysql://62.234.211.179:3306/picSite?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://62.234.211.179:3306/picSite?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
   redis:
     host: 62.234.211.179
     port: 6379
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
   thymeleaf:
     cache: false
     suffix: .html
+logging:
+  file: logs/picsite.log
+  level.root: warn
+  level.pri.zxx.picsite.mapper: debug
 server:
   port: 8081
