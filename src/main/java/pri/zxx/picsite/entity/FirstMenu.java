@@ -1,5 +1,9 @@
 package pri.zxx.picsite.entity;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 /**
  * @author zxx
  * @desc
@@ -7,8 +11,11 @@ package pri.zxx.picsite.entity;
  */
 public class FirstMenu {
     private Long fmId;
+    @NotBlank(message = "一级目录名称不能为空")
     private String fmName;
+    @NotNull(message = "是否启用不能为空")
     private Integer enabled;
+    @Size(min = 6, max = 10)
     private String tip;
 
 
